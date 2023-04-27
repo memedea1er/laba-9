@@ -11,11 +11,11 @@ public class zadanie_4 {
                         & 48 <= array[i + 2][j] & array[i + 2][j] <= 57 & 48 <= array[i + 3][j] & array[i + 3][j] <= 57) {
                     if ((int) (array[i][j] - 48) * ((int) (array[i + 1][j] - 48) - (int) (array[i + 2][j] - 48)) == (int) (array[i + 3][j] - 48)) {
                         System.out.println((int) (array[i][j] - 48) + "*(" + (int) (array[i + 1][j] - 48) + "-" + (int) (array[i + 2][j] - 48)  + ")=" +
-                                (int) (array[i + 3][j] - 48) + " (Правильно, строка)");
+                                (int) (array[i + 3][j] - 48) + " (Правильно, столбик)");
                         x += 1;
                     } else {
                         System.out.println((int) (array[i][j] - 48) + "*(" + (int) (array[i + 1][j] - 48) + "-" + (int) (array[i + 2][j] - 48)  + ")=" +
-                                (int) (array[i + 3][j] - 48) + " (Неравильно, строка)");
+                                (int) (array[i + 3][j] - 48) + " (Неравильно, столбик)");
                         list.add((int) (array[i][j] - 48));
                         list.add((int) (array[i + 1][j] - 48));
                         list.add((int) (array[i + 2][j] - 48));
@@ -29,11 +29,11 @@ public class zadanie_4 {
                         & 48 <= array[i][j + 2] & array[i][j + 2] <= 57 & 48 <= array[i][j + 3] & array[i][j + 3] <= 57) {
                     if ((int) (array[i][j] - 48) * ((int) (array[i][j + 1] - 48) - (int) (array[i][j + 2] - 48)) == (int) (array[i][j + 3] - 48)) {
                         System.out.println((int) (array[i][j] - 48) + "*(" + (int) (array[i][j+1] - 48) + "-" + (int) (array[i][j+2] - 48)  + ")=" +
-                                (int) (array[i][j+3] - 48) + " (Правильно, столбик)");
+                                (int) (array[i][j+3] - 48) + " (Правильно, строка)");
                         x += 1;
                     } else {
                         System.out.println((int) (array[i][j] - 48) + "*(" + (int) (array[i][j+1] - 48) + "-" + (int) (array[i][j+2] - 48)  + ")=" +
-                                (int) (array[i][j+3] - 48) + " (Неправильно, столбик)");
+                                (int) (array[i][j+3] - 48) + " (Неправильно, строка)");
                         list.add((int) (array[i][j] - 48));
                         list.add((int) (array[i][j + 1] - 48));
                         list.add((int) (array[i][j + 2] - 48));
